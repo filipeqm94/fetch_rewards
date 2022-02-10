@@ -14,4 +14,4 @@ class Transaction(models.Model):
         Customer, related_name="transactions", on_delete=models.CASCADE
     )
     points = models.IntegerField()
-    timestamp = models.DateTimeField(auto_now_add=True)
+    timestamp = models.DateTimeField()
